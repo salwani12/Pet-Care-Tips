@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Pet Care Tips</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="test.css">
+    <style>
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #808080d0; /* Semi-transparent grey background */
+            min-height: 80px; /* Consistent height */
+            padding: 10px 20px; /* Inner spacing */
+            font-size: 1rem; /* Font size for links */
+        }
+
+        .navbar .navbar-brand {
+            font-weight: bold;
+            color: white;
+            font-size: 1.5rem; /* Larger font size for the brand */
+        }
+
+        .navbar .nav-link {
+            color: white !important;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            padding: 10px 15px; /* Padding for better spacing */
+        }
+
+        .navbar .nav-link:hover {
+            color: white !important;
+            background-color: black; /* Black background on hover */
+        }
+
+        .dropdown-menu {
+            background-color: black; /* Dropdown background color */
+            border: 1px solid #ddd;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .dropdown-item {
+            color: white; /* Text color */
+        }
+
+        .dropdown-item:hover {
+            background-color: black;
+            color: white;
+        }
+
+        container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .category {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            width: calc(33% - 2rem);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .category h3 {
+            color: #333;
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+        .category p {
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .category {
+                width: calc(50% - 2rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .category {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="logo.png" width="50"> Pet Care
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about1.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogsDropdown" role="button" data-bs-toggle="dropdown">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="experts-tips.html">Tips From Experts</a></li>
+                            <li><a class="dropdown-item" href="owners-stories.html">Pet Owner Stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourceDropdown" role="button" data-bs-toggle="dropdown">
+                            Resource
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="emergency-care.html">Emergency Pet Care</a></li>
+                            <li><a class="dropdown-item" href="pet-shop.html">Pet Supply Shop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="faqs.html">FAQs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+                </ul>
+                <!-- Search Bar -->
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">🔍</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="container">
+        <section class="search-section">
+            <h1>How can we help you?</h1>
+        </section>
+        <section class="categories">
+            <a href="pet-care.html" class="category">
+                <img src="care.webp" alt="Pet Care">
+                <h3>Pet Care</h3>
+                <p>Learn about caring for your pets, from nutrition to grooming tips.</p>
+            </a>
+            <a href="health.html" class="category">
+                <img src="health.png" alt="Health">
+                <h3>Health</h3>
+                <p>Find answers to common health issues and how to keep your pet healthy.</p>
+            </a>
+            <a href="training.html" class="category">
+                <img src="training.png" alt="Training">
+                <h3>Training</h3>
+                <p>Explore training techniques to improve your pet's behavior.</p>
+            </a>
+            <a href="safety.html" class="category">
+                <img src="safety.png" alt="Safety">
+                <h3>Safety</h3>
+                <p>Tips on ensuring your pet's safety at home and outdoors.</p>
+            </a>
+            <a href="product.html" class="category">
+                <img src="product.png" alt="Product Recommendations">
+                <h3>Product Recommendations</h3>
+                <p>What products should you have for your pets?</p>
+            </a>
+            <a href="contact.html" class="category">
+                <img src="contact.png" alt="Contact Us">
+                <h3>Contact Us</h3>
+                <p>Reach out to our support team for additional assistance.</p>
+            </a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Purrr-fect Guidance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

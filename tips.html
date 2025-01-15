@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Care Tips</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="test.css">
+    <style>
+      .title-section {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.897);
+        padding: 20px 0;
+      }
+      .titles-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+      }
+      .title-box {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+      .title-box h3 {
+        margin-bottom: 15px;
+      }
+      .title-box p {
+        margin-bottom: 10px;
+        line-height: 1.6;
+      }
+      .title-box h5 {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+      .title-box ul {
+        padding-left: 20px;
+      }
+      .title-box ul li {
+        margin-bottom: 5px;
+      }
+      .title-box ul a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      .title-box ul a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+          <a class="navbar-brand" href="homepage.html">
+              <img src="logo.png" width="50"> Pet Care
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link" href="homepage.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about1.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="blogsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Blog
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="blogsDropdown">
+                          <li><a class="dropdown-item" href="experts-tips.html">Tips From Experts</a></li>
+                          <li><a class="dropdown-item" href="owners-stories.html">Pet Owner Stories</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="resourceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Resource
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="resourceDropdown">
+                          <li><a class="dropdown-item" href="emergency-care.html">Emergency Pet Care</a></li>
+                          <li><a class="dropdown-item" href="pet-shop.html">Pet Supply Shop</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                  <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+              </ul>
+              <!-- Search Bar -->
+              <form class="d-flex ms-3">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary" type="submit">🔍</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+  
+    <!-- Pet Care Tips Section -->
+    <div class="title-section">
+      <h1>Pet Care Tips</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="titles-section">
+      <!-- Dogs -->
+      <div class="title-box">
+        <h3>Dogs</h3>
+        <p><strong>Tip 1:</strong> Take your dog for two daily walks to keep them happy and healthy.</p>
+        <p><strong>Tip 2:</strong> Brush their fur weekly to reduce shedding and avoid matting.</p>
+        <p><strong>Did You Know?</strong><br>Dogs' tapetum lucidum layer allows them to see better in the dark than humans.</p>
+        <h5>See also:</h5>
+        <ul>
+          <li><a href="https://youtu.be/jXHOHOYkbYc?si=cNn8xaXkBLevDI-m">Service Dog Awareness (Interactive Video)</a></li>
+          <li><a href="https://www.cnet.com/home/kitchen-and-household/dog-essentials-list-13-necessities-for-new-dog-owners/">Dog Essentials</a></li>
+        </ul>
+      </div>
+
+      <!-- Cats -->
+      <div class="title-box">
+        <h3>Cats</h3>
+        <p><strong>Tip 1:</strong> Use a scratching post to protect your furniture and your cat's claws.</p>
+        <p><strong>Tip 2:</strong> Schedule regular vet visits to monitor common illnesses.</p>
+        <p><strong>Did You Know?</strong><br>Cats sleep for about 70% of their lives.</p>
+        <h5>See also:</h5>
+        <ul>
+          <li><a href="https://youtu.be/qW-KIjHjjHM?si=AyF7uvWgHPUWdRQG">Cat Games (Interactive Video)</a></li>
+          <li><a href="https://www.cats.org.uk/adopt-a-cat/preparing-for-a-cat">Cat Essentials</a></li>
+        </ul>
+      </div>
+
+      <!-- Birds -->
+      <div class="title-box">
+        <h3>Birds</h3>
+        <p><strong>Tip 1:</strong> Provide toys like puzzles and chewable materials to keep your bird mentally stimulated.</p>
+        <p><strong>Tip 2:</strong> Clean their cage regularly and provide fresh water daily.</p>
+        <p><strong>Did You Know?</strong><br>Parrots can mimic human speech and sounds, thanks to their advanced vocal learning skills.</p>
+        <h5>See also:</h5>
+        <ul>
+          <li><a href="https://youtu.be/Ke3E712spb8?si=s0zlitwnaeC2OyZg">Beginner's Guide to Pet Birds</a></li>
+          <li><a href="https://youtu.be/3nYgs69Q9FQ?si=ZPIZ61RJpWj2pIpX">Need to Know First</a></li>
+          <li><a href="https://www.petloverscentre.com.my/bird?srsltid=AfmBOoppuHfSWiZxFiBvosPzmS5YG1z3ONfL5QItsPj4Izlw7wXOS3CT">Bird Supplies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <div class="container text-center">
+          <p class="mb-0">&copy; 2025 Purrr-fect Guidance. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training - Pet Care Tips</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="test.css">
+    <style>
+        header {
+            background-color: rgba(0, 0, 0, 0.623);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .training-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .training-section h1 {
+            color: #333;
+        }
+        .training-section p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+        .training-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .tip-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .tip-card:hover {
+            transform: translateY(-5px);
+        }
+        .tip-card img {
+            width: 100%;
+            height: 200px; /* Ensures consistent height */
+            object-fit: cover; /* Ensures image fits within the dimensions */
+            border-radius: 8px;
+        }
+        .tip-card h3 {
+            color: #333;
+            margin-top: 1rem;
+        }
+        .tip-card p {
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .training-tips {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .training-tips {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pet Training Tips</h1>
+    </header>
+
+    <div class="container">
+        <section class="training-section">
+            <h1>Training Your Pet Made Easy</h1>
+            <p>Whether you're teaching your pet basic commands or addressing behavioral issues, these expert training tips will help you and your furry friend build a stronger bond.</p>
+        </section>
+
+        <section class="training-tips">
+            <div class="tip-card">
+                <img src="commands.webp" alt="Basic Commands">
+                <h3>Basic Commands</h3>
+                <p>Start with simple commands like "Sit," "Stay," and "Come." Positive reinforcement helps your pet learn faster.</p>
+            </div>
+            <div class="tip-card">
+                <img src="crate.avif" alt="Crate Training">
+                <h3>Crate Training</h3>
+                <p>Crate training provides your pet with a safe and comfortable space. Start slow and make it a positive experience.</p>
+            </div>
+            <div class="tip-card">
+                <img src="behavioral.jpg" alt="Behavioral Training">
+                <h3>Behavioral Training</h3>
+                <p>Address behavioral issues like barking, jumping, and chewing with patience and consistency.</p>
+            </div>
+            <div class="tip-card">
+                <img src="socialize.jpg" alt="Socialization">
+                <h3>Socialization</h3>
+                <p>Expose your pet to new people, places, and other animals to help them become well-adjusted and confident.</p>
+            </div>
+            <div class="tip-card">
+                <img src="positive.jpg" alt="Positive Reinforcement">
+                <h3>Positive Reinforcement</h3>
+                <p>Reward good behavior with treats, praise, or toys. This motivates your pet to repeat positive actions.</p>
+            </div>
+            <div class="tip-card">
+                <img src="trainingtips.webp" alt="Training Tips">
+                <h3>Advanced Training</h3>
+                <p>Once your pet masters the basics, challenge them with advanced tricks and commands to keep their mind active.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Purrr-fect Guidance. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

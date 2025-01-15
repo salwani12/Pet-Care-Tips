@@ -1,0 +1,113 @@
+/* General Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: rgba(172, 169, 169, 0.705);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header-banner {
+    color: black;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #808080d0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: white !important;
+    background-color: black;
+}
+
+.dropdown-menu {
+    background-color: black;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-color: #4CAF50; /* Solid background color for hero section */
+    height: 300px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: white;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+}
+
+/* Links */
+a {
+    text-decoration: none; /* Remove underline for all links */
+}
+
+a:hover {
+    color: #276221; /* Optional: Change link color on hover */
+}
